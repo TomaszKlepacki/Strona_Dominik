@@ -2453,6 +2453,7 @@ body.dark .waxon_tm_settings .cursor li .svg,
 }
 
 @media (max-width: 1200px){
+	.waxon_tm_hero .content_inner{top: 70%;}
 	.waxon_tm_hero .background .leftpart{width: 0%;}
 	.waxon_tm_hero .background .rightpart{padding-left: 0px;}
 	.waxon_tm_modalbox_news .box_inner{width: 100%;top: 0px;bottom: 0px;}
@@ -2466,6 +2467,8 @@ body.dark .waxon_tm_settings .cursor li .svg,
 }
 
 @media (max-width: 1040px){
+	.waxon_tm_hero .content_inner{top: 70%;}
+	.waxon_tm_hero .background .overlay_image{background-color: rgba(255, 255, 255, 0.685);}
 	.waxon_tm_preloader{display: none;}
 	.waxon_tm_topbar{display: none;}
 	.waxon_tm_mobile_menu{display: block;}
