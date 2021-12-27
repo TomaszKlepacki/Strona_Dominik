@@ -48,6 +48,10 @@ iframe{
 a, i{
 	border:none;
 }
+p{
+	text-align: justify;
+}
+
 a:hover{text-decoration:none;}
 
 h1 { font-size: 45px; }
