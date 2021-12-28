@@ -95,8 +95,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 @media (max-width: 1040px) {
-.container_second{padding:0px 0px;}
+.container{padding:0px 20px;}
 }
+
+
+
 
 .waxon_tm_all_wrap{
 	width: 100%;
@@ -2528,7 +2531,7 @@ body.dark .waxon_tm_settings .cursor li .svg,
 	.waxon_tm_portoflio .portfolio_inner ul{margin: 0px;}
 	.waxon_tm_portoflio .portfolio_inner ul li{width: 100%;padding-left: 0px;}
 	.waxon_tm_testimonials .testi_inner .right .image_list ul{margin-left: -20px;}
-	.waxon_tm_testimonials .testi_inner .right .image_list ul li{padding-left: 20px;margin-bottom:20px;}
+	.waxon_tm_testimonials .testi_inner .right .image_list ul li{padding-left: 10px;margin-bottom:20px;}
 	.waxon_tm_news .news_inner ul{margin-left: 0px;}
 	.waxon_tm_news .news_inner ul li{width: 100%;padding-left: 0px;}
 	.waxon_tm_modalbox_news .main_content .icon{position: relative;margin-bottom: 30px;}

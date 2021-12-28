@@ -1,17 +1,47 @@
-.testimonials
+ /* .testimonials
 {
     height: 100%;
     width: 100%;
-    margin: 100px auto 100px;
+    margin: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px,1fr));
     grid-gap: 60px;
+
 }
+
+@media(max-width:1040px){
+    .testimonials{
+        height: 100%;
+        width: 100%;
+        margin: 10px;
+        display: grid;
+        
+        grid-gap: 60px;
+    }
+}
+
+@media(max-width:980px){
+    .testimonials{
+        height: 100%;
+        width: 100%;
+        margin: 10px;
+        display: grid;
+        
+        grid-gap: 60px;
+    }
+}
+
+
+.testimonials
+{
+   
+}
+
 .testimonials .card
 {
     
     position: relative;
-    width:350px;
+    width:20rem;
     margin: 0 auto;
     background:rgb(13, 13, 22);
     padding: 20px;
@@ -21,6 +51,20 @@
     box-shadow: 0 10px 40px rgba(0,0,0,.5);
     overflow: hidden;
 }
+
+@media (max-width: 1040px) {
+    .testimonials .card {    
+    width: 30em;
+    margin: -6px;
+    font-size: 8px;
+   
+    align-items: center;
+    }
+    }
+
+    
+    
+
 .testimonials .card .layer
 {
     position: absolute;
@@ -47,7 +91,17 @@
    font-size: 18px;
    line-height: 24px;
    color:#fff;
+
 }
+
+@media (max-width: 1040px){
+
+    .testimonials .card .content p{
+      font-size: 15px;
+    }
+}
+
+
 .testimonials .card .content .image
 {
    width: 100px;
@@ -72,4 +126,4 @@
 .testimonials .card:hover .content .details h2 span
 {
     color: #fff;
-}
+}   */
