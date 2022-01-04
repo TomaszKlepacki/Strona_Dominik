@@ -1489,7 +1489,7 @@ h1, h2, h3, h4, h5, h6{
 	height: auto;
 	clear: both;
 	float: left;
-	padding: 205px 0px 100px 0px;
+	padding: 90px 0px 100px 0px;
 	background-color: #f8f9fa;
 }
 .waxon_tm_news .news_inner{
@@ -1684,6 +1684,7 @@ h1, h2, h3, h4, h5, h6{
 	opacity: 1;
 	visibility: visible;
 	margin-top: 0px;
+	
 }
 .waxon_tm_modalbox_news .close{
 	position: fixed;
@@ -1719,6 +1720,7 @@ h1, h2, h3, h4, h5, h6{
 	max-height: 450px;
 	z-index: -1;
 	margin-bottom: 40px;
+	display: none;
 }
 .waxon_tm_modalbox_news .description_wrap .image img{
 	min-width: 100%;
@@ -2521,7 +2523,7 @@ body.dark .waxon_tm_settings .cursor li .svg,
 	.waxon_tm_news{padding-top: 140px;}
 	.waxon_tm_contact{padding-top: 140px;}
 	.mouse-cursor{display: none;}
-	.map_wrap{display: none;}
+	/* .map_wrap{display: none;} */
 }
 
 @media(max-width: 768px){
