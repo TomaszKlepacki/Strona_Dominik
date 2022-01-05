@@ -1551,7 +1551,7 @@ h1, h2, h3, h4, h5, h6{
 	float: left;
 	padding: 30px 40px 25px 40px;
 	background-color: #fff;
-	
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 0px 20px;
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
 	    -ms-transition: all .3s ease;
@@ -1872,7 +1872,7 @@ body.modal{
 	float: left;
 	position: relative;
 	margin-bottom: 150px;
-	padding-top: 205px;
+	padding-top: 90px;
 }
 .waxon_tm_contact .contact_inner{
 	width: 100%;

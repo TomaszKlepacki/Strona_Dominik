@@ -24,6 +24,9 @@
         overflow:hidden;
 }
 
+
+        
+
 .email-bt .text-call span {
     text-align: center;
     color:#080808;
@@ -39,6 +42,7 @@
     font-family: 'montserrat', Arial, Helvetica, sans-serif;
     
 }
+
 
 .email-bt .text-call:hover span {
     opacity: 1;
