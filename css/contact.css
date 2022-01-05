@@ -27,14 +27,8 @@
 }
 
 
-/* @media(min-width:1600px){
-        .email-bt{
-        height: 200px;
-        width: 120px;
-        }
 
-}
-         */
+        
 
 .email-bt .text-call span {
     text-align: center;
@@ -78,8 +72,8 @@
 }
 
 .email-bt i  {
-        -webkit-animation: opsimple 6s infinite;
-        animation: opsimple 6s infinite;
+        -webkit-animation: opsimple 10s infinite;
+        animation: opsimple 10s infinite;
 }
 
 .info{
@@ -163,3 +157,66 @@
 }
 }
 /* конец кнопки звязи */
+
+@media(min-width:1200px){
+        .email-bt{
+        height: 100px;
+        width: 100px;
+        }
+
+        .email-bt .text-call{
+                height:100px;
+                width:100px;        
+                border-radius:50%;
+                position:relative;
+                overflow:hidden;
+        }
+        .info{
+                position: absolute;
+                top: 25%;
+                left: 14%;
+                padding: 0;
+        
+                color: white;
+                font-size: 14px;
+        
+        }
+  
+
+
+        .second_info{
+                position: absolute;
+                top: 40%;
+                left: 15%;
+                padding: 0;
+        
+                color: white;
+                font-size: 14px;
+        }
+        
+
+
+        .email-bt .text-call span {
+                text-align: center;
+                color:#080808;
+                opacity: 0;
+                font-size: 0;
+                    position:absolute;
+                    left: 15%;
+                    top: 40%;
+                    font-size: 14px;
+                line-height: 14px;
+                    font-weight: 400;
+                text-transform: uppercase;
+                transition: opacity .3s linear;
+                font-family: 'montserrat', Arial, Helvetica, sans-serif;
+                
+            }
+
+            .email-bt .text-call:hover span {
+                opacity: 1;
+                    font-size: 14px;
+                    left: 0px;
+                    
+            }
+}
