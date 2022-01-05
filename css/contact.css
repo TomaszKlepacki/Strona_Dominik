@@ -16,6 +16,8 @@
         animation:email-an linear 3s infinite;
 }
 
+
+
 .email-bt .text-call{
         height:68px;
         width:68px;        
@@ -25,7 +27,14 @@
 }
 
 
-        
+/* @media(min-width:1600px){
+        .email-bt{
+        height: 200px;
+        width: 120px;
+        }
+
+}
+         */
 
 .email-bt .text-call span {
     text-align: center;
@@ -42,6 +51,7 @@
     font-family: 'montserrat', Arial, Helvetica, sans-serif;
     
 }
+
 
 
 .email-bt .text-call:hover span {
