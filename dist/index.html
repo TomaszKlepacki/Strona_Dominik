@@ -7,15 +7,15 @@
 <!--<![endif]-->
 
 <head>
-	
-	<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Dominik Piksa - Trener/Terapeuta Ruchowy.">
 	<meta name="google-site-verification" content="IrRXk1P5sO_L2Lfo1A5z1Ri33N_3UhW8HjSi3Cey_bY" />
 	<meta name="description" content="Terapia Trening - Dominik Piksa">
 	<meta name="author" content="Marketify">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<title>Dominik Piksa - Terapeuta ruchowy | Trener</title>
 
 	<!-- STYLES -->
@@ -769,8 +769,7 @@
 
 
 
-								<form class="form" id="contactForm" method="post" novalidate
-									action="modal/send-script.php">
+								<form class="form" id="contactForm" method="post" novalidate action="modal/send-script.php">
 									<div class="form-row">
 										<label for="field-name">Imię i nazwisko</label>
 										<input type="text" name="name" required id="field-name"
@@ -782,16 +781,21 @@
 											data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
 									</div>
 									<div class="form-row">
+										<label for="field-phone">Numer telefonu</label>
+										<input type="phone" name="phone" required id="field-phone"
+											data-error="Wpisz numer telefonu" pattern="[0-9]+">
+									</div>
+
+									<div class="form-row">
 										<label for="field-message">Wiadomość</label>
 										<textarea name="message" required data-error="Musisz wypełnić pole"
 											id="field-message" pattern=".+"></textarea>
 									</div>
 									<div class="form-row">
 										<label class="checkbox-cnt">
-											<input type="checkbox" required data-error="Musisz wypełnić pole"
-												name="regulation">
+											<input type="checkbox" name="regulation">
 											<i class="state" aria-hidden="true"></i>
-											<span>Zaznacz</span>
+											<span class="check">Zaznacz</span>
 										</label>
 									</div>
 									<div class="form-row">
@@ -850,8 +854,8 @@
 							</div> -->
 							<iframe
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.2009641434374!2d19.88540161560162!3d50.0825241794263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bd26ca5a0d7%3A0x5e1b0fa547a5552d!2sBalicka%201C%2C%2033-332%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1641399852581!5m2!1spl!2spl"
-								width="600" height="450" style="border:15px; color: black;" allowfullscreen=""
-								loading="lazy"></iframe>
+								width="600" height="450" style="border:15px; color: black; margin-top: 0rem;"
+								allowfullscreen="" loading="lazy"></iframe>
 						</div>
 					</div>
 				</div>
@@ -917,7 +921,7 @@
 	<script src="js/plugins.js"></script>
 	<script src="js/init.js"></script>
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>      -->
-    
+
 	<script>
 		$(function () {
 			var $inputs = $('form input[required], form textarea[required], select[required]');
@@ -1014,7 +1018,7 @@
 							} else {
 								if (ret.status == 'ok') {
 									$form.replaceWith(
-										'<div class="form-send-success"><strong>Wiadomość została wysłana</strong><span>Dziękujemy za kontakt. Postaramy się odpowiedzieć jak najszybciej</span></div>'
+										'<div class="form-send-success"><strong>Wiadomość została wysłana</strong><span>Dziękuję za kontakt. Postaram się odpowiedzieć jak najszybciej</span></div>'
 									);
 								}
 								if (ret.status == 'error') {

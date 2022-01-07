@@ -3,6 +3,7 @@ $mailToSend = 'tomaszklepacki@op.pl';
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['name'];
 	$email      = $_POST['email'];
+	$phone     = $_POST['phone'];
 	$message    = $_POST['message'];
 	$regulation = $_POST['regulation'];
 	$errors     = Array();
@@ -12,6 +13,9 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	}
 	if ( ! filter_var( $email, FILTER_VALIDATE_EMAIL ) ) {
 		array_push( $errors, 'email' );
+	}
+	if ( ! filter_var( $phone, FILTER_VALIDATE_PHONE ) ) {
+		array_push( $errors, 'phone' );
 	}
 	if ( empty( $message ) ) {
 		array_push( $errors, 'message' );
@@ -40,12 +44,13 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 			<body>
 			<div>Imię: <strong>$name</strong></div>
 			<div>Email: <a href=\"mailto:$email\">$email</a></div>
+			<div>Telefon: <a href=\"phoneto:$phone\">$phone</a></div>
 			<div class=\"msg-title\"> <strong>Wiadomość:</strong></div>
 			<div>$message</div>
 			</body>
 			</html>";
 
-		if ( mail( $mailToSend, 'Wiadomość ze strony - ' . date( "d-m-Y" ), $message, $headers ) ) {
+		if ( mail( $mailToSend, 'Wiadomość ze strony Dominik Piksa - ' . date( "d-m-Y" ), $message, $headers ) ) {
 			$return['status'] = 'ok';
 		} else {
 			$return['status'] = 'error';
