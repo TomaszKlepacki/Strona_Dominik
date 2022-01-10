@@ -1663,7 +1663,7 @@ h1, h2, h3, h4, h5, h6{
 .waxon_tm_modalbox_news .box_inner{
 	position: absolute;
 	top: 70px;
-	bottom: 70px;
+	bottom: 35vh;
 	width: 968px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -1709,6 +1709,7 @@ h1, h2, h3, h4, h5, h6{
 	overflow: hidden;
 	padding: 70px;
 	overflow-y: scroll;
+	
 }
 .waxon_tm_modalbox_news .details{
 	width: 100%;

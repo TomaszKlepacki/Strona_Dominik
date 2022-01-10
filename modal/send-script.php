@@ -1,5 +1,5 @@
 <?php
-$mailToSend = 'tomaszklepacki@op.pl';
+$mailToSend = 'dominikpixel@gmail.com';
 if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	$name       = $_POST['name'];
 	$email      = $_POST['email'];
@@ -14,9 +14,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	if ( ! filter_var( $email, FILTER_VALIDATE_EMAIL ) ) {
 		array_push( $errors, 'email' );
 	}
-	if ( ! filter_var( $phone, FILTER_VALIDATE_PHONE ) ) {
-		array_push( $errors, 'phone' );
-	}
+	
 	if ( empty( $message ) ) {
 		array_push( $errors, 'message' );
 	}
@@ -29,7 +27,7 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 	} else {
 		$headers = 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-		$headers .= 'From: tomaszklepacki@op.pl' . "\r\n";
+		$headers .= 'From: dominikpixel@gmail.com' . "\r\n";
 		$headers .= 'Reply-to: ' . $email;
 		$message = "
 			<html>
@@ -37,12 +35,12 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 			<meta charset=\"utf-8\">
 			</head>
 			<style type='text/css'>
-				body {font-family:sans-serif; color:#222; padding:20px;}
+				body {font-family:Montserrat, sans-serif; color:#222; padding:20px;}
 				div {margin-bottom:10px;}
 				.msg-title {margin-top:30px;}
 			</style>
 			<body>
-			<div>Imię: <strong>$name</strong></div>
+			<div>Imię i nazwisko: <strong>$name</strong></div>
 			<div>Email: <a href=\"mailto:$email\">$email</a></div>
 			<div>Telefon: <a href=\"phoneto:$phone\">$phone</a></div>
 			<div class=\"msg-title\"> <strong>Wiadomość:</strong></div>

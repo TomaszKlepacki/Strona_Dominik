@@ -282,7 +282,7 @@
 
 
 		<div type="waxon_tm_button" class="email-bt">
-			<a href="#contact">
+			<a href="#visit">
 			<div class="text-call">
 
 				<p class="info">Zapisz się</p>
@@ -343,7 +343,7 @@
 			<div class="container">
 				<div class="about_inner">
 					<div class="left">
-						<img class="thumbnail" src="img/about/person.jpg" alt="" />
+						<img src="img/about/person.jpg" alt="" />
 						<!-- Animation Image classes: thumbnail, thumbnail-2, thumbnail-3, thumbnail-4,-->
 					</div>
 					<div class="right">
@@ -403,7 +403,7 @@
 								</div>
 								<div class="main_content">
 									<div class="descriptions">
-										<p>Pozbycie się bólu. Ból jaki odczuwamy jest skutkiem wielu obciążeń jakie
+										<p> Ból jaki odczuwamy jest skutkiem wielu obciążeń jakie
 											nakładamy na nasze ciało. Dzięki szerokiej diagnostyce możemy odnaleźć
 											przyczynę powstania nadmiernych napięć i bólu. Następnie, dzięki odpowiednio
 											dobranej terapii możemy wyeliminować przyczynę i ból.</p>
@@ -435,7 +435,7 @@
 								</div>
 								<div class="main_content">
 									<div class="descriptions">
-										<p>Powrót do pełni sprawności i sportu po urazach. Powrót po urazie do pełni
+										<p> Powrót po urazie do pełni
 											sprawności i sportu wymaga stopniowego i odpowiedniego odbudowania
 											tolerancji naszych tkanek na obciążanie. Dlatego tak ważny jest fachowy i
 											odpowiedni dobór ćwiczeń. Niestety często w momencie gdy zacznie nas coś
@@ -482,9 +482,17 @@
 
 									</div>
 								</div>
+
 							</div>
 						</li>
 					</ul>
+
+					<div class="waxon_tm_button" style="bottom: 20px;" data-position="center">
+						<!-- Position: left, center, right -->
+						<a href="https://zarejestrowani.pl/w/xB-JdBwNNzfadH0I1n3AEA/">
+						<p>Zapisy online</p>
+					</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -755,10 +763,22 @@
 						<div class="title">
 							<h3>Umów się na wizytę<span class="bg">Kontakt</span></h3>
 						</div>
+
+
 					</div>
+
 					<div class="desc">
-						<p style="text-decoration: none; color:black; ">Koszt wizyty: 160 zł / godzina</p>
-						<a style="text-decoration: none; color:black; " href="tel:+48697710509">Telefon: +48 697 710 509</a>
+						<p style="text-decoration: none; color:black;  margin-bottom: 4px;">Koszt wizyty:
+							<a style="text-decoration: none; color:black;  margin-bottom: 4px; font-weight: bold;"> 160 zł / godzina</a>
+						</p>
+						<a style="text-decoration: none; color:black; ">Telefon: <a style="text-decoration: none; color:black;  margin-bottom: 4px; font-weight: bold;" href="tel:+48697710509">+48 697 710 509</a>
+						<p style="text-decoration: none; color:black;  margin-bottom: 4px;">Umów się bezpośrednio na
+							wizytę pod linkiem:
+							<a style=" color: black;  font-weight: bold; "href="https://zarejestrowani.pl/w/xB-JdBwNNzfadH0I1n3AEA/"> ZAPISY ONLINE</a>
+						</p>
+						<p style="text-decoration: none; color:black;  margin-bottom: 4px;">lub prześlij maila z
+							zapytaniem o możliwości innych terminów. </p>
+						
 					</div>
 
 
@@ -769,7 +789,8 @@
 
 
 
-								<form class="form" id="contactForm" method="post" novalidate action="modal/send-script.php">
+								<form class="form" id="contactForm" method="post" novalidate
+									action="modal/send-script.php">
 									<div class="form-row">
 										<label for="field-name">Imię i nazwisko</label>
 										<input type="text" name="name" required id="field-name"
@@ -852,6 +873,7 @@
 							<!-- <div class="map_wrap">
 								<div class="map" id="ieatmaps"></div>
 							</div> -->
+
 							<iframe
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.2009641434374!2d19.88540161560162!3d50.0825241794263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165bd26ca5a0d7%3A0x5e1b0fa547a5552d!2sBalicka%201C%2C%2033-332%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1641399852581!5m2!1spl!2spl"
 								width="600" height="450" style="border:15px; color: black; margin-top: 0rem;"
@@ -1018,7 +1040,7 @@
 							} else {
 								if (ret.status == 'ok') {
 									$form.replaceWith(
-										'<div class="form-send-success"><strong>Wiadomość została wysłana</strong><span>Dziękuję za kontakt. Postaram się odpowiedzieć jak najszybciej</span></div>'
+										'<div class="form-send-success"><strong>Wiadomość została wysłana</strong><span>Dziękuje za kontakt. Postaram się odpowiedzieć jak najszybciej</span></div>'
 									);
 								}
 								if (ret.status == 'error') {
